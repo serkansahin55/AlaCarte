@@ -1,6 +1,6 @@
 
 MenuItem.destroy_all
-User.destroy_all
+# User.destroy_all
 Restaurant.destroy_all
 Review.destroy_all
 Favorite.destroy_all
@@ -26,7 +26,7 @@ menu_items = [
         name: "Veggie Pizza",
         description: "Broccoli, Mushroom, Onions",
         price: 20,
-        image: "https://images.contentstack.io/v3/assets/blt068dbc54bf4fc7ed/bltf70df0a3f7b98d04/5db5c829e9effa6ba52972ea/Triple_Cheese_Pizza_v2.jpg",
+        image: "https://cdn3.tmbi.com/toh/GoogleImagesPostCard/Whole-Wheat-Veggie-Pizza_EXPS_HCKA19_12558_C10_13_5b.jpg",
         restaurant: alacarte
 
 
@@ -35,7 +35,7 @@ menu_items = [
         name: "Meatlovers Pizza",
         description: "Bacon, Ham, Sausage",
         price: 20,
-        image: "https://images.contentstack.io/v3/assets/blt068dbc54bf4fc7ed/bltf70df0a3f7b98d04/5db5c829e9effa6ba52972ea/Triple_Cheese_Pizza_v2.jpg",
+        image: "https://www.wedgysonline.com/wp-content/uploads/2016/09/meateaters.png",
         restaurant: alacarte
     },
 ]

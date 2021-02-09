@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
-  resources :menu_items
-  resources :favorites
-  resources :reviews
-  resources :users
-  resources :restaurants
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  namespace :api do
+    namespace :v1 do
+        resources :menu_items
+        resources :favorites
+        resources :reviews
+        resources :users
+        resources :restaurants
+    end
+
+  end
+
+  get '*path', to: 'pages#index', via: :all
+
 end
