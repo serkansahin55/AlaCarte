@@ -21,12 +21,14 @@ class Api::V1::ReviewsController < ApplicationController
     end
 
     def destroy
-        reviewId = @review.id
+        @review = Review.find(params[:id])
+        review_id = @review.id
         @review.destroy
-        render json: {message:"Zap! Review deleted", reviewId:reviewId}
+        render json: { message: "Zap! Review deleted", id: review_id }, status: :ok
     end
 
     def update
+        @review = Review.find(params[:id])
         @review.update(review_params)
         render json: @review, status: 200
     end
