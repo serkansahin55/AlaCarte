@@ -60,7 +60,7 @@ ActiveRecord::Schema.define(version: 2021_02_07_235133) do
   end
 
   add_foreign_key "favorites", "users"
-  add_foreign_key "menu_items", "restaurants"  
+  add_foreign_key "menu_items", "restaurants"
   add_foreign_key "reviews", "restaurants"
   add_foreign_key "reviews", "users"
 end

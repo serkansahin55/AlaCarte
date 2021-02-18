@@ -29,7 +29,7 @@ class Api::V1::ReviewsController < ApplicationController
 
     def update
         @review = Review.find(params[:id])
-        @review.update(review_params)
+        @review.update!(review_params)
         render json: @review, status: 200
     end
 
